@@ -18,6 +18,7 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
 {
 @ExceptionHandler(Exception.class)
 //override method of ResponseEntityExceptionHandler class
+
 public final ResponseEntity<Object> handleAllExceptions(Exception ex, WebRequest request)
 {
 //creating exception response structure
