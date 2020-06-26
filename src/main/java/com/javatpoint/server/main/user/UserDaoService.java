@@ -19,6 +19,8 @@ users.add(new User(2, "Robert", new Date()));
 users.add(new User(3, "Adam", new Date()));
 users.add(new User(4, "Andrew", new Date()));
 users.add(new User(5, "Jack", new Date()));
+users.add(new User(5, "Jack", new Date()));
+users.add(new User(5, "Jack", new Date()));
 }
 //method that retrieve all users from the list
 public List<User> findAll()
