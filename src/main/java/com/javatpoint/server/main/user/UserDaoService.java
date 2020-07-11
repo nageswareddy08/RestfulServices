@@ -8,12 +8,9 @@ import org.springframework.stereotype.Component;
 public class UserDaoService 
 {
 public static int usersCount=5;
-//creating an instance of ArrayList
 private static List<User> users=new ArrayList<>();
-//static block 
 static
 {
-//adding users to the list
 users.add(new User(1, "John", new Date()));
 users.add(new User(2, "Robert", new Date()));
 users.add(new User(3, "Adam", new Date()));
@@ -22,12 +19,10 @@ users.add(new User(5, "Jack", new Date()));
 users.add(new User(5, "Jack", new Date()));
 users.add(new User(5, "Jack", new Date()));
 }
-//method that retrieve all users from the list
 public List<User> findAll()
 {
 return users;
 }
-//method that adds a user in the list 
 public User save(User user)
 {
 if(user.getId()==null)
