@@ -14,6 +14,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
+/**
+ * this class ussed to controlling user resource
+ */
 @RestController
 public class UserResource 
 {
@@ -37,6 +41,7 @@ throw new UserNotFoundException("id: "+ id);
 return user;
 }
 */
+
 
 @GetMapping("/users/{id}")
 public Resource<User> retriveUser(@PathVariable int id)
